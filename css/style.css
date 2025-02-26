@@ -15,3 +15,45 @@ body{
     box-sizing: border-box;
     
 }
+.container {
+   width: min(90%, 1400px);
+    margin-inline: auto;
+    
+}
+
+/* header  */
+
+header {
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.logo-header img {
+   width: 300px;
+   
+}
+
+.links-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.links-menu a {
+    text-decoration: none;
+    display: flex;
+    font-size: 28px;
+    
+}
+.links-menu a:hover {
+    color: #d19a1f;
+}
