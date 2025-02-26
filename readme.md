@@ -1,2 +1,2 @@
 # Mohmed
- congor waa iskeenay 
+ xongor waa iskeenay 
