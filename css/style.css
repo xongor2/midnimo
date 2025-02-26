@@ -23,6 +23,45 @@ body{
 
 /* header  */
 
+
+.info-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #001559;
+    width: 100vw;
+    height: 5vh;
+    padding: 0px 50px;
+    color: aliceblue;
+}
+
+.inf-header-contact {
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+
+}
+
+.hover1:hover {
+    color: #d19a1f;
+}
+
+.social-header{
+    display: flex;
+    gap: 30px;
+
+}
+
+@media (max-width: 820px) {
+    .info-header {
+        display: none;
+    }
+    
+}
+
+
+/* end info header  */
+
 header {
     width: 100vw;
     height: 10vh;
@@ -39,6 +78,7 @@ header {
 }
 .logo-header img {
    width: 300px;
+   cursor: pointer;
    
 }
 
@@ -57,3 +97,14 @@ header {
 .links-menu a:hover {
     color: #d19a1f;
 }
+
+@media (max-width: 820px ) {
+    header{
+        display: none;
+    }
+    
+}
+
+ /* end Desk top menu */
+
+ 
