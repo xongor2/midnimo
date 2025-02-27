@@ -1,56 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>midnimo</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+
     <div class="info-header">
-        <div class="inf-header-contact ">
-            <div>
-                <i class="fa-solid fa-phone hover1"></i>
-                <span class="hover1">+252 61 5953662</span>
-            </div>
-            <div>
-                <i class="fa-solid fa-envelope hover1"></i>
-                <span class="hover1">info@midnimocollege.so</span>
-             </div>
+      <div class="inf-header-contact">
+        <div>
+          <i class="fa-solid fa-phone hover1"></i>
+          <span class="hover1">+252 61 5953662</span>
         </div>
+        <div>
+          <i class="fa-solid fa-envelope hover1"></i>
+          <span class="hover1">info@midnimocollege.so</span>
+        </div>
+      </div>
 
-        <div class="social-header">
-            <i class="fa-brands fa-facebook hover1" ></i>
-            <i class="fa-brands fa-twitter hover1" ></i>
-            <i class="fa-brands fa-skype hover1"></i>
-        </div>
+      <div class="social-header">
+        <i class="fa-brands fa-facebook hover1"></i>
+        <i class="fa-brands fa-twitter hover1"></i>
+        <i class="fa-brands fa-skype hover1"></i>
+      </div>
     </div>
+
+    <!-- end header-info -->
+
+
+
     <header>
-        <section class="container header-section">
-            <div class="logo-header">
-                <img src="./Images/logo midnimo.jpg" alt="">
+
+
+        <div class="container desktop-menu">
+            <div class="logo-desktop">
+                <img src="./Images/logo midnimo.jpg" alt="" />
             </div>
-             <nav>
-                <ul class="links-menu">
-                    <li> <a href="#">Home</a></li>
-                    <li> <a href="#">About</a></li>
-                    <li> <a href="#">blog</a></li>
-                    <li> <a href="#">Cotact</a></li>
-                    
+
+            <nav>
+                <ul class="links-menu-desktop">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">blog</a></li>
+                  <li><a href="#">Cotact</a></li>
                 </ul>
-             </nav>
+            </nav>
 
 
 
-
-        </section>
-
+        </div>
 
 
+        <!-- end deskop -->
+
+        <div class="container mobile-menu">
+
+            <div class="logo-mobile">
+                <img src="/Images/logo midnimo.jpg" alt="logo" />
+            </div>
+
+            <div class="bar-menu">
+                <i class="fa-solid fa-bars-staggered" data-visible="true"></i>
+                <i class="fa-solid fa-xmark"data-visible="false"></i>
+              </div>
+
+        </div>
+           
+
+        <div class="links-mobile-menu" data-visible="false">
+                <ul class="links-menu-desktop list-mobile-menu">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">blog</a></li>
+                  <li><a href="#">Cotact</a></li>
+                </ul>
+        </div>
+      
+
+    
     </header>
 
 
-    
-</body>
+
+
+
+
+<script>
+      const hamburger = document.querySelector(".bar-menu");
+      const mobileMenu = document.querySelector(".links-mobile-menu");
+      const icons = document.querySelectorAll("i");
+
+      hamburger.addEventListener("click", function (event) {
+        const isVisible = mobileMenu.getAttribute("data-visible");
+        if (isVisible == "true") {
+          // qari hiding
+          mobileMenu.setAttribute("data-visible", "false");
+          icons[0].setAttribute("data-visible", "true");
+          icons[1].setAttribute("data-visible", "false");
+        } else if (isVisible == "false") {
+          // soo bandhig showing
+          mobileMenu.setAttribute("data-visible", "true");
+          icons[0].setAttribute("data-visible", "false");
+          icons[1].setAttribute("data-visible", "true");
+        }
+      });
+</script>
+  </body>
 </html>
