@@ -210,12 +210,48 @@ header {
     color: #001559;
 }
 
+@media (max-width: 850px ) {
+    .hero-content h1 {
+        font-size: 5rem;
+        line-height: 6rem;
+        
+    }
+    .hero-content p {
+        width: 550px;
+        padding-bottom: 20px;
+    }
+
+    
+}
+
+@media (max-width: 480px ) {
+    .hero-bg{
+        height: 100vh;
+        padding: 50px 0px;
+
+    }
+    .hero-content h1 {
+        font-size: 3rem;
+        line-height: 5rem;
+    }
+    .hero-content p {
+        width: 90%;
+        color: rgb(192, 192, 192);
+    }
+    .hero-content button {
+        width: 100%;
+        margin-top: 60px;
+    }
+}
+
+/* end hero  */
+
+
 .sectiin2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 100px;
-
-    padding-block: 15rem;
+    padding: 150px 0px;
 }
 .sectin2-ceintent {
     display: flex;
@@ -235,6 +271,8 @@ header {
     font-family: Palanquin, sans-serif;
     line-height: 1.8rem;
     color: #777777;
+    padding-right: 5px;
+    border-right: 4px solid #30d979;
 }
 
 .primary-button {
@@ -263,6 +301,29 @@ header {
     border-radius: 30px;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
     border-bottom: 8px solid #d19a1f;
+}
+
+@media (max-width: 850px ) {
+    .sectiin2 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px ) {
+    .sectiin2 {
+        padding: 100px 0px;
+    }
+    .sectin2-ceintent h1 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+        text-align: center;
+    }
+    .sectin2-ceintent button{
+        width:100% ;
+
+    }
+
 }
 
 /* end secti 2  */
