@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+img {
+    max-width: 100%;
+}
+
+body{
+    background-color: #f6f6f6;
+    font-family: "Poppins", serif;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+a:hover{
+    text-decoration: none;
+    color: #3952a3;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+.container {
+   width: min(90%, 1400px);
+    margin-inline: auto;
+    
+}
+
+
+
+/* hero section  */
+
+.blog-hero-bg {
+    background: linear-gradient( #0088ff, #000000aa), url(https://midnimocollege.so/wp-content/uploads/2024/12/11-scaled.jpg);
+    height: 600px;
+}
+
+.blog-hero-content {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+    gap: 20px;
+}
+
+.blog-hero-content h1 {
+    font-size: 8rem;
+    line-height: 9rem;
+    text-transform: capitalize;
+}
+
+.blog-hero-bg p {
+    font-size: 1.6rem;
+    color: #fffefe;
+    width: 900px;
+    text-align: center;
+
+}
+
+@media (max-width: 850px ) {
+    .blog-hero-content h1 {
+        font-size: 6rem;
+        letter-spacing: 0.4rem;
+    }
+    .blog-hero-content p {
+        width: 90%;
+        padding-bottom: 20px;
+    }
+
+    
+}
+
+@media (max-width: 480px ) {
+    .hero-bg{
+        height: 100vh;
+        padding: 50px 0px;
+
+    }
+    .hero-content h1 {
+        font-size: 3rem;
+        line-height: 5rem;
+    }
+    .hero-content p {
+        width: 90%;
+        color: rgb(192, 192, 192);
+    }
+    .hero-content button {
+        width: 100%;
+        margin-top: 80px;
+    }
+}
+
+/* end blog hero  */
+
+.blog-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding-block: 50px;
+}
+
+@media (max-width: 850px ){
+    .blog-section {
+        grid-template-columns: 1fr 1fr;
+    }
+}
