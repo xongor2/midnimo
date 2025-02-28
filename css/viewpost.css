@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+img {
+    max-width: 100%;
+}
+
+body{
+    background-color: #f6f6f6;
+    font-family: "Poppins", serif;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+a:hover{
+    text-decoration: none;
+    color: #3952a3;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+.container {
+   width: min(90%, 1400px);
+    margin-inline: auto;
+    
+}
+
+.view-post-bg {
+    background: linear-gradient( #0088ff70, #000000a8), url(https://images.unsplash.com/photo-1683025944649-3fe157009c14?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8QmFzaWMlMjBudXJzaW5nJTIwc2tpbGxzfGVufDB8MHwwfHx8MA%3D%3D);
+    height: 800px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.view-post-content {
+    background-color: white;
+    box-shadow: 0.1px 0.1px 20px rgba(0, 0, 0, 0.1);
+    margin-top: -150px;
+    border-radius: 20px 20px 0px 0px;
+    padding: 50px 150px 50px 50px;
+
+
+}
+.view-post-content h1 {
+    font-size: 4rem;
+    padding-bottom: 20px;
+}
+.view-post-content p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+@media (max-width: 850px) {
+    .view-post-content {
+        padding: 50px;
+    }
+    .view-post-content h1 {
+        font-size: 3rem;
+
+    }
+    
+}
+@media (max-width: 480px) {
+    .view-post-content {
+        padding: 20px;
+    }
+    .view-post-content h1 {
+        font-size: 1.5rem;
+
+    }
+    .view-post-content p {
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+}
