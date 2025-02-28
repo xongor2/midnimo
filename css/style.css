@@ -8,7 +8,14 @@ body{
     background-color: #f6f6f6;
     font-family: "Poppins", serif;
 }
-
+a{
+    text-decoration: none;
+    color: #000;
+}
+a:hover{
+    text-decoration: none;
+    color: #3952a3;
+}
 *{
     padding: 0;
     margin: 0;
@@ -275,24 +282,25 @@ header {
     border-right: 4px solid #30d979;
 }
 
-.primary-button {
+.primary2-button {
     width: 200px;
     height: 60px;
+    padding: 0PX 20PX;
     font-family: Palanquin, sans-serif;
     font-size: 1.3rem;
     border: none;
-    background-color: #001559;
+    background-color: #3952a3;
     color: white;
     border-radius: 5px;
     font-weight: 500;
 }
 
-.primary-button:hover {
+.primary2-button:hover {
     border: #001559 2px solid;
     background-color: transparent;
     color: #001559;
 }
-.primary-button i {
+.primary2-button i {
     font-size: 1rem;
     padding-left: 10px;
 }
@@ -416,9 +424,150 @@ header {
 }
 /* end section3  */
 
+.post-section {
+    display: flex;
+    padding-block: 150px;
+    gap: 30px;
+}
 
+.post-info {
+    padding-top: 150px;
+    width: 80%;
+}
 
+.post-info h1 {
+    font-size: 4.5rem;
+    font-family: Oswald, sans-serif;
+    color: #3952a3;
+    padding-bottom: 10px;
+    gap: 30px;
+}
+.post-info p {
+    font-size: 1rem;
+    line-height: 1.8rem;
+    padding-bottom: 30px;
+}
+.primary-button a {
+    color: #ffffff;
+}
+.primary-button a:hover {
+    color: #3952a3;
+}
+.primary-button {
+    padding: 20PX 40PX;
+    font-family: Palanquin, sans-serif;
+    font-size: 1.3rem;
+    border: none;
+    background-color: #3952a3;
+    color: white;
+    border-radius: 5px;
+    font-weight: 500;
+}
+.primary-button:hover {
+    border: #3952a3 2px solid;
+    background-color: transparent;
+    color: #001559;
+}
 
+.post-list {
+    grid-column: 2 / span 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.post-cards {
+    background-color: #ffffff00;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: 0.5px solid #979797;
+}
+.post-cards  img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0px 0px;
+    cursor: pointer;
+}
+.post-cards h2 {
+    font-size: 1.5rem;
+    padding: 20px 20px 10px 20px;
+    cursor: pointer;
+}
+.post-cards h2:hover {
+    color: #3952a3;
+}
+.post-cards p { 
+    padding-bottom: 10px;
+    margin-inline: 20px;
+    border-bottom: 1px solid #222121;
+}
+.post-date {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 20px;
+}
+
+.post-auther {
+    display: flex;
+    gap: 15px;
+    padding-block: 20px;
+    align-items: center;
+    
+}
+.post-auther img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px solid #001559;
+    cursor: default;
+}
+.auther-mane {
+    display: flex;
+    flex-direction: column;
+}
+.auther-mane h4 {
+    color: #3952a3;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+}
+.post-date button {
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.post-date button:hover {
+    color: #3952a3;
+}
+
+@media (max-width: 850px) {
+    .post-section {
+        display: flex;
+        flex-direction: column;
+        padding-block: 80px;
+    }
+    .post-info {
+        padding: 0px 0px 50px 50px;
+        text-align: center;
+    }
+    .post-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }  
+}
+
+@media (max-width: 480px) {
+    .post-info {
+        font-size: 3rem;
+        width: 100%;
+        padding: 0px 0px 30px 0px;
+    }
+    .post-info h1 {
+        font-size: 3rem;
+        
+    }
+    
+}
 
 /* end section4 post section */
 
@@ -517,4 +666,4 @@ header {
         padding: 40px 0px;
     }
 }
-
+ /* end footer  */
