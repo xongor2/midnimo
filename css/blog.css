@@ -75,6 +75,7 @@ a:hover{
 }
 
 @media (max-width: 480px ) {
+   
     .hero-bg{
         height: 100vh;
         padding: 50px 0px;
@@ -106,5 +107,12 @@ a:hover{
 @media (max-width: 850px ){
     .blog-section {
         grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 480px ){
+  
+    .blog-section {
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }
