@@ -384,6 +384,9 @@ header {
     font-size: 4em;
     line-height: 5rem;
 }
+.section2-flex {
+    display: flex;
+}
 
 .sectin2-ceintent p {
     font-size: 1.30rem;
@@ -391,7 +394,13 @@ header {
     line-height: 1.8rem;
     color: #777777;
     padding-right: 5px;
-    border-right: 4px solid #30d979;
+
+}
+
+.section2-line {
+    width: 1.5rem;
+    background-color: #d19a1f;
+    animation: hero-floutDownUp 3s infinite ease-in-out; 
 }
 
 .primary2-button {
@@ -607,7 +616,7 @@ header {
     box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     border: 0.5px solid #979797;
-    transform: scale(1.1); 
+    transform: translateY(3px); 
     transition: transform 0.3s ease-in-out;
 }
 .post-cards  img {
